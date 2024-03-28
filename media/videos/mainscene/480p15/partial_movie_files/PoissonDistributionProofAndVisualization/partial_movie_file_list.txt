@@ -1,0 +1,10 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/KSA_Probability_Statistics/media/videos/mainscene/480p15/partial_movie_files/PoissonDistributionProofAndVisualization/1185818338_3811343985_223132457.mp4'
+file 'file:C:/KSA_Probability_Statistics/media/videos/mainscene/480p15/partial_movie_files/PoissonDistributionProofAndVisualization/624642324_1141282389_1080202449.mp4'
+file 'file:C:/KSA_Probability_Statistics/media/videos/mainscene/480p15/partial_movie_files/PoissonDistributionProofAndVisualization/624642324_313728328_4028746704.mp4'
+file 'file:C:/KSA_Probability_Statistics/media/videos/mainscene/480p15/partial_movie_files/PoissonDistributionProofAndVisualization/624642324_938520708_4131132508.mp4'
+file 'file:C:/KSA_Probability_Statistics/media/videos/mainscene/480p15/partial_movie_files/PoissonDistributionProofAndVisualization/624642324_1141282389_4013017735.mp4'
+file 'file:C:/KSA_Probability_Statistics/media/videos/mainscene/480p15/partial_movie_files/PoissonDistributionProofAndVisualization/624642324_2360516948_3439253156.mp4'
+file 'file:C:/KSA_Probability_Statistics/media/videos/mainscene/480p15/partial_movie_files/PoissonDistributionProofAndVisualization/624642324_1502846548_758497372.mp4'
+file 'file:C:/KSA_Probability_Statistics/media/videos/mainscene/480p15/partial_movie_files/PoissonDistributionProofAndVisualization/624642324_1852709697_1420120494.mp4'
+file 'file:C:/KSA_Probability_Statistics/media/videos/mainscene/480p15/partial_movie_files/PoissonDistributionProofAndVisualization/624642324_1141282389_371929858.mp4'
