@@ -1,0 +1,64 @@
+\documentclass{article}
+\usepackage{amsmath, amsthm, mismath,fancyvrb,kotex,amssymb,graphicx}
+
+\title{Variance of Sum}
+\author{22-010 김도영}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+Two rods of unknown lengths a,b. A rule can measure the length but with error having 0 mean(unbiased) and variance $\sigma ^2$. Errors are independent from measurement to measurement. To estimate a,b we could take separate measurement A,B of each rod. 
+
+\[
+E[A] = a, Var(A) = \sigma ^2, \; E[B] = b, Var(B) = \sigma ^2,  
+\]
+We can do better using two measurement, by measuring $a+b$ and $a-b$. WHY?
+
+\section{Explanation}
+
+
+let $ X = A+B , Y = A-B $ then,
+
+\[E(X) = a+b, Var(X)= \sigma ^2, E(Y) = a-b, Var(Y) = \sigma ^2 \]
+
+Furthermore, 
+
+\[E(X^2)=V(X)+(E(X))^2=\sigma ^2 + (a+b)^2
+\]
+\[
+E(Y^2)=V(Y)+(E(Y))^2=\sigma ^2 + (a-b)^2,
+\]
+\[
+E(XY)= E(A^2-B^2)= E(A^2)-E(B^2)=Var(A)+(E(A))^2-(Var(B)+(E(B))^2)=a^2-b^2
+\]
+
+
+$
+Var(a) = Var(\cfrac{X+Y}{2})= E(\left(\cfrac{X+Y}{2}\right)^2)-\{E\left(\cfrac{X+Y}{2}\right)\}^2
+$
+
+$
+= \cfrac{1}{4} (E(X^2)+E(Y^2)+2E(XY))-\{\cfrac{1}{2} E(X)+E(Y) \}^2
+$
+
+$
+= \cfrac{1}{4} (\sigma ^2 + (a+b)^2 + \sigma ^2 + (a-b)^2 +2(a^2-b^2))- a^2
+$
+
+$
+=\cfrac{\sigma ^2}{2}
+$
+
+similarly, $Var(b)=Var(\cfrac{X-Y}{2})=\cfrac{\sigma ^2}{2}$
+
+Therefore, using X,Y has smaller Variance while mean is same compared to using A,B. $\qed$
+
+
+
+
+
+\end{document}
