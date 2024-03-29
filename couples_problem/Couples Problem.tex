@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{amsmath, amsthm, mismath,fancyvrb,kotex,amssymb,graphicx}
+
+\title{Couples Problem}
+\author{22-010 김도영}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+Suppose $n \geq 2$ couples are seated at random around a table with men and women alternating. Let $N$ be the number of husbands seated next to their wife. Calculate $E[N]$ and the $Var(N)$.
+
+
+\section{Explanation}
+let $A_i = $ {couple i are together}
+
+\[N = \sum_{i=1}^{n} I[A_i]
+\]
+$
+E[I[A_i]] = 0 \cdot P(I[A_i]=0) +1 \cdot P(I[A_i]=1) = \cfrac{2\cdot (n-1)!(n-1)!}{n!(n-1)!}= \cfrac{2}{n}
+$
+
+\[
+E(N) = E( \sum_{i=1}^{n} I[A_i])= \sum_{i=1}^{n} E(I[A_i]) = n \cdot \cfrac{2}{n} = 2
+\]
+
+
+\[
+Var(N) = E(N^2) - (E(N))^2 = E\left(\left(\sum_{i=1}^{n} I[A_i])\right)^2\right)-4
+\]
+\[
+= E\left(\sum_{i=1}^{N} (I[A_i])^2+ \sum_{i \neq j} I[A_i]I[A_j]  \right)-4
+\]
+
+\[
+= \sum_{i=1}^{N} E(I[A_i])+ \sum_{i \neq j} E(I[A_i]I[A_j])  )-4 \; (\because I[A_i]^2 = I[A_i])
+\]
+
+\[
+= \cfrac{2}{n} \cdot n + \cfrac{2}{n} \cfrac{2n-3}{(n-1)^2} n(n-1) -4
+\]
+\[
+= 2 - \cfrac{2}{n-1} \qed
+\]
+
+
+
+\end{document}
