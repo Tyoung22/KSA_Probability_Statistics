@@ -1,6 +1,8 @@
 import random 
 import statistics
 
+N = 4 # num of couples
+Sample_N = 1000 # enum of experiment
 N = 300 # num of couples
 Sample_N = 1000 # enum of experiment
 
@@ -19,7 +21,9 @@ for _ in range(Sample_N):
     table.append(Woman_list.pop(random.randrange(len(Woman_list))))
     while Man_list:
         table.append(Man_list.pop(random.randrange(len(Man_list))))
+        table.append(Man_list.pop(random.randrange(len(Man_list))))
         table.append(Woman_list.pop(random.randrange(len(Woman_list))))
+        
         
     for i in range(0,len(table),2):
         if table[i+1].idx==table[i].idx or table[i-1].idx ==table[i].idx:
